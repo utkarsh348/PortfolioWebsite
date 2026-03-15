@@ -1,0 +1,40 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import resumeHtml from '../data/resume-output.html?raw';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="History" description="Professional background and resume" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>History</h1>
+			<div class="resume-content">
+				<Fragment set:html={resumeHtml} />
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.resume-content {
+		max-width: 720px;
+		margin: 0 auto;
+		padding: 1em;
+	}
+	.resume-content :global(h1),
+	.resume-content :global(h2),
+	.resume-content :global(h3) {
+		margin-top: 1.5em;
+		margin-bottom: 0.5em;
+	}
+	.resume-content :global(p) {
+		margin: 0.5em 0;
+	}
+</style>

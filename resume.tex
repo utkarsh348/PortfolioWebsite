@@ -1,0 +1,113 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{0.0\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Utkarsh Gupta} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{+91 9731802567 \\ Bengaluru, India \\ \href{mailto:utkarsh348@gmail.com}{utkarsh348@gmail.com} \\ \href{https://www.linkedin.com/in/utkarsh-gupta-0a621a191/}{linkedin.com/utkarsh-gupta}} 
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+\begin{rSection}{SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Languages &    Kotlin, Java, Python, TypeScript, Golang, SQL, C \\
+Technologies & Kubernetes, Docker, Apache Spark, Apache Kafka, Apache Hadoop, Linux/UNIX \\
+Data analysis Skills &  Exploratory Data Analysis, Supervised Learning, NLP, Computer Vision \\
+Database and Cloud & MongoDB, DynamoDB, PostgreSQl - (SQL and NoSQL), AWS \\
+Observability & Prometheus, Splunk \\
+Frameworks/Libraries & Tensorflow, Keras, OpenCV, SpringBoot, Spring, Pandas \\
+Back End Skills &  Microservice Architecture, REST API development, Secure Coding\\
+LLM and Agentic AI & RAG, MCP Servers, MCP Clients, LLM SDKs \\
+\end{tabular}
+\end{rSection}
+
+\begin{rSection}{EXPERIENCE}
+ \itemsep-1em
+\textbf{Software Engineer 2 - Intuit} \vspace{-5pt} \hfill Aug 2023 - Present
+ \begin{itemize}
+ \itemsep-0.5em
+     \item Developed the OAuth2 authentication and authorization platform for Identity using SpringBoot and Kotlin with higher reliability at 99.999\%. 
+     \item Designed token minting APIs for better fault tolerance and resiliency resulting in 65\% fewer false failures.
+     \item Led the development of SAML protocols, saving more than \$400,000 in third-party contracts. 
+     \item Led the development of BYOI(Bring Your Own Identity) SCIM Features enabling \$5 million in revenue.
+     \item Developed AI enabled co-pilots, leveraging Model Context Protocol servers and RAG systems to boost developer productivity by 40\% and reducing MTTR by 30\% 
+ \end{itemize}
+\textbf{Co-op Intern - Intuit} \vspace{-6pt} \hfill Jan 2023 - Jun 2023
+ \begin{itemize}
+  \itemsep-0.5em
+     \item Developed the system for seamless identity and access management (SCIM) for critical security requirements, using SpringBoot and Kotlin that delivered a 35\% faster onboarding experience. 
+ \end{itemize}
+ \textbf{Software Engineer Intern - Mosaic Wellness} \vspace{-6pt} \hfill Jun 2022 - July 2022
+ \begin{itemize}
+  \itemsep-0.5em
+     \item Enhanced the backend system for appointment bookings and reports using TypeScript for 3x improvement in throughput and 50\% reduction in latency.
+     \item Optimised SQL queries for memory efficiency and refactored queries to protect against injection attacks.
+ \end{itemize}
+\end{rSection} 
+\begin{rSection}{Education}
+
+{\bf Bachelor of Technology in Computer Science and Engineering}, PES University \hfill {2019 - 2023} \\
+{8.9 GPA, Teaching Assistant for UE20CS333 Image Processing and Computer Vision
+}
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROJECTS}
+\vspace{-1em}
+ \itemsep-0.5em
+\item \textbf{Automatic Film Soundtrack generation} \vspace{-5pt}
+\begin{itemize}
+ \itemsep-0.7em
+    \item Developed Autoencoders and Transformers to generate multi-dimensional sentiment-conditioned music. 
+    \item Performed Sentiment analysis on the Valence-Arousal scale for scripts and successfully achieved transfer of attribute characteristics using Variational Autoencoders. 
+    \item Published our work in the Generative AI Workshop at  \href{https://dl.acm.org/doi/10.1145/3639856.3639891}{AI-ML Systems 2023} and \href{https://arxiv.org/abs/2401.07084}{Machine Learning for Audio Workshop, NeurIPS 
+2023}
+\end{itemize}
+
+\item \textbf{UK traffic data accidents' hotspot detection and analysis} \vspace{-5pt}
+\begin{itemize}
+ \itemsep-0.7em
+ \item Used Kernel density estimation (KDE) plots to analyze hotspots of accident-prone areas weighed against severity over the years to understand the evolution of these dangerous zones. 
+ \item Supervised learning algorithms were used to predict the accident severity. Later published at: \href{https://ieeexplore.ieee.org/document/10037449}{IBSSC 2022}.
+ \end{itemize}
+\item \textbf{Distributed File System Modeled On Hadoop}\vspace{-5pt} 
+\begin{itemize}
+ \itemsep-0.7em
+ \item An implementation of a multithreaded DFS with namenodes and datanodes leveraging WebSockets for communication. The system is also capable of performing map-reduce tasks, caching chunks and is fault-tolerant to namenode and datanode failures.
+   \end{itemize}
+
+\item \textbf{Streaming Twitter via Spark and Kafka} \vspace{-5pt} 
+\begin{itemize}
+ \itemsep-0.7em
+ \item Streaming Twitter data to Spark and publishing aggregated data through Kafka. Dynamically creating topics based on content of tweets.
+  \end{itemize}
+
+\end{rSection} 
+
+%---------------------------------------------------
+
+
+\end{document}
